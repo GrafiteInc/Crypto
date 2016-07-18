@@ -1,6 +1,6 @@
 # Crypto
 
-**Crypto** - Cryptography tools for Laravel and Lumen
+**Crypto** - Powerful and elegant cryptography tools for Laravel and Lumen
 
 The Cryptograpy toolset Crypto provides a collection of methods for handy, encryption, decryption, uuid generating, app key generating and more.
 

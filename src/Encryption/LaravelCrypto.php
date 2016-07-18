@@ -2,7 +2,7 @@
 
 namespace Yab\Laracogs\Encryption;
 
-use Auth;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Config;
 
 class LaravelCrypto extends LaracogsEncrypter
@@ -13,7 +13,7 @@ class LaravelCrypto extends LaracogsEncrypter
      */
     public function __construct()
     {
-        $app_key = Config::get('app.key') ?: 'unsafe';
+        $app_key = getenv('APP_KEY') ?: 'unsafe';
         $api_key = Auth::id() ?: 0;
 
         parent::__construct($app_key, $api_key);

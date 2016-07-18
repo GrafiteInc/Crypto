@@ -15,8 +15,7 @@ class Crypto
      */
     public static function shareable()
     {
-        $key = Config::get('app.key')[0] ?: 'someRandomString';
-
+        $key = getenv('APP_KEY');
         return new CryptoEncrypter($key, $key);
     }
 

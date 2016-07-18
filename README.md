@@ -2,6 +2,9 @@
 
 **Crypto** - Powerful and elegant cryptography tools for Laravel and Lumen
 
+[![Codeship](https://img.shields.io/codeship/6ef9c860-2f4a-0134-3809-5ebc8f268022.svg?maxAge=2592000)](https://packagist.org/packages/yab/crypto)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/YABhq/Crypto/badges/quality-score.png?b=develop)](https://scrutinizer-ci.com/g/YABhq/Crypto/?branch=develop)
+[![Packagist](https://img.shields.io/packagist/dt/yab/crypto.svg?maxAge=2592000)](https://packagist.org/packages/yab/crypto)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://packagist.org/packages/yab/crypto)
 
 The Cryptograpy toolset Crypto provides a collection of methods for handy, encryption, decryption, uuid generating, app key generating and more.

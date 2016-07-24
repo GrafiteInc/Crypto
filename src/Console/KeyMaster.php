@@ -64,6 +64,6 @@ class KeyMaster extends Command
      */
     protected function generateRandomKey()
     {
-        return 'base64:'.base64_encode(random_bytes(16));
+        return 'base64:'.base64_encode(random_bytes(32));
     }
 }

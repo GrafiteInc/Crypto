@@ -26,8 +26,6 @@ class CryptoProvider extends ServiceProvider
      */
     public function register()
     {
-
-
         /*
         |--------------------------------------------------------------------------
         | Register the Services
@@ -38,9 +36,12 @@ class CryptoProvider extends ServiceProvider
             return new Crypto();
         });
 
-        $loader = AliasLoader::getInstance();
-
-        $loader->alias('Crypto', \Yab\Crypto\Services\Crypto::class);
+        if (class_exists('Illuminate\Foundation\AliasLoader')) {
+            $loader = AliasLoader::getInstance();
+            $loader->alias('Crypto', \Yab\Crypto\Services\Crypto::class);
+        } else {
+            class_alias(\Yab\Crypto\Services\Crypto::class, 'Crypto');
+        }
 
         /*
         |--------------------------------------------------------------------------

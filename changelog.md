@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 ----
 
+## [v1.0.2] - 2016-07-24
+
+### Fixed
+- Issue with encrypt
+
 ## [v1.0.1] - 2016-07-24
 
 ### Fixed

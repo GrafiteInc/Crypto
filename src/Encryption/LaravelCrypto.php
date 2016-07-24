@@ -1,11 +1,11 @@
 <?php
 
-namespace Yab\Laracogs\Encryption;
+namespace Yab\Crypto\Encryption;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Config;
 
-class LaravelCrypto extends LaracogsEncrypter
+class LaravelCrypto extends CryptoEncrypter
 {
     /**
      * Construct the Laravel version of the LaracogsEncrypter

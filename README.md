@@ -40,28 +40,9 @@ Add this to your providers:
 Yab\Crypto\CryptoProvider::class
 ```
 
-##### After these few steps you have the following tools at your fingertips:
+## Documentation
 
-#### Facades
-```php
-Crypto::uuid();
-Crypto::encrypt('string');
-Crypto::decrypt('enc-string');
-Crypto::shared()->encrypt('string');
-Crypto::shared()->decrypt('enc-string');
-```
-
-#### Helpers
-```php
-crypto_uuid();
-crypto_encrypt('string');
-crypto_decrypt('enc-string');
-```
-
-#### Commands
-```php
-php artisan crypto:key
-```
+[https://laracogs.com/docs/Services/crypto](https://laracogs.com/docs/Services/crypto)
 
 ## License
 Crypto is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)

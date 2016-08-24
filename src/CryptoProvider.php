@@ -51,11 +51,11 @@ class CryptoProvider extends ServiceProvider
 
         // Crypto
         Blade::directive('crypto_encrypt', function ($expression) {
-            return "<?php echo Crypto::encrypt$expression; ?>";
+            return "<?php echo Crypto::encrypt($expression); ?>";
         });
 
         Blade::directive('crypto_decrypt', function ($expression) {
-            return "<?php echo Crypto::encrypt$expression; ?>";
+            return "<?php echo Crypto::encrypt($expression); ?>";
         });
 
         /*

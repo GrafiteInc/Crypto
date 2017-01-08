@@ -2,7 +2,6 @@
 
 namespace Yab\Crypto\Services;
 
-use Illuminate\Support\Facades\Config;
 use Yab\Crypto\Encryption\CryptoEncrypter;
 use Yab\Crypto\Encryption\LaravelCrypto;
 
@@ -16,6 +15,11 @@ class Crypto
     public static function shareable()
     {
         $key = getenv('APP_KEY');
+
+        if (!$key) {
+            $key = config('app.key');
+        }
+
         return new CryptoEncrypter($key, $key);
     }
 

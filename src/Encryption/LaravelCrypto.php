@@ -2,9 +2,6 @@
 
 namespace Yab\Crypto\Encryption;
 
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Config;
-
 class LaravelCrypto extends CryptoEncrypter
 {
     /**
@@ -13,9 +10,9 @@ class LaravelCrypto extends CryptoEncrypter
      */
     public function __construct()
     {
-        $app_key = getenv('APP_KEY') ?: 'unsafe';
-        $api_key = Auth::id() ?: 0;
+        $app_key = config('app.key') ?: 'unsafe';
+        $auth_key = auth()->id() ?: 0;
 
-        parent::__construct($app_key, $api_key);
+        parent::__construct($app_key, $auth_key);
     }
 }

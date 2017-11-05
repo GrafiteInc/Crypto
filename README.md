@@ -42,7 +42,7 @@ Yab\Crypto\CryptoProvider::class
 
 ## Documentation
 
-[https://laracogs.com/docs/Services/crypto](https://laracogs.com/docs/Services/crypto)
+[https://laracogs.com/docs/services/crypto](https://laracogs.com/docs/services/crypto)
 
 ## License
 Crypto is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)

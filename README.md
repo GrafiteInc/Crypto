@@ -2,7 +2,6 @@
 
 **Crypto** - Powerful and elegant cryptography tools for Laravel and Lumen
 
-[![Codeship](https://img.shields.io/codeship/6ef9c860-2f4a-0134-3809-5ebc8f268022.svg?maxAge=2592000)](https://packagist.org/packages/yab/crypto)
 [![Build Status](https://travis-ci.org/grafiteinc/crypto.svg?branch=master)](https://travis-ci.org/grafiteinc/crypto)
 [![Maintainability](https://api.codeclimate.com/v1/badges/7577ab93d33bf9b69605/maintainability)](https://codeclimate.com/github/GrafiteInc/Crypto/maintainability)
 [![Packagist](https://img.shields.io/packagist/dt/grafite/crypto.svg?maxAge=2592000)](https://packagist.org/packages/grafite/crypto)

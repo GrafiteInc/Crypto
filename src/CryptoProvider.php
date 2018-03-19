@@ -1,11 +1,11 @@
 <?php
 
-namespace Yab\Crypto;
+namespace Grafite\Crypto;
 
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use Yab\Crypto\Services\Crypto;
+use Grafite\Crypto\Services\Crypto;
 
 class CryptoProvider extends ServiceProvider
 {
@@ -38,9 +38,9 @@ class CryptoProvider extends ServiceProvider
 
         if (class_exists('Illuminate\Foundation\AliasLoader')) {
             $loader = AliasLoader::getInstance();
-            $loader->alias('Crypto', \Yab\Crypto\Services\Crypto::class);
+            $loader->alias('Crypto', \Grafite\Crypto\Services\Crypto::class);
         } else {
-            class_alias(\Yab\Crypto\Services\Crypto::class, 'Crypto');
+            class_alias(\Grafite\Crypto\Services\Crypto::class, 'Crypto');
         }
 
         /*
@@ -65,7 +65,7 @@ class CryptoProvider extends ServiceProvider
         */
 
         $this->commands([
-            \Yab\Crypto\Console\KeyMaster::class,
+            \Grafite\Crypto\Console\KeyMaster::class,
         ]);
     }
 }

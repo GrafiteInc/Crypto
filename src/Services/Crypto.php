@@ -1,9 +1,9 @@
 <?php
 
-namespace Yab\Crypto\Services;
+namespace Grafite\Crypto\Services;
 
-use Yab\Crypto\Encryption\CryptoEncrypter;
-use Yab\Crypto\Encryption\LaravelCrypto;
+use Grafite\Crypto\Encryption\CryptoEncrypter;
+use Grafite\Crypto\Encryption\LaravelCrypto;
 
 class Crypto
 {

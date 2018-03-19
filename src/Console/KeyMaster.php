@@ -1,6 +1,6 @@
 <?php
 
-namespace Yab\Crypto\Console;
+namespace Grafite\Crypto\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;

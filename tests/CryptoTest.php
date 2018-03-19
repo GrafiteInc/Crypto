@@ -1,6 +1,6 @@
 <?php
 
-use Yab\Crypto\Encryption\CryptoEncrypter;
+use Grafite\Crypto\Encryption\CryptoEncrypter;
 
 class CryptoTest extends PHPUnit_Framework_TestCase
 {

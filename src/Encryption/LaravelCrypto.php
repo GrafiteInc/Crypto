@@ -1,6 +1,6 @@
 <?php
 
-namespace Yab\Crypto\Encryption;
+namespace Grafite\Crypto\Encryption;
 
 class LaravelCrypto extends CryptoEncrypter
 {

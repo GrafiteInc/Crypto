@@ -19,14 +19,14 @@ class AppTest extends Orchestra\Testbench\TestCase
     protected function getPackageProviders($app)
     {
         return [
-            \Yab\Crypto\CryptoProvider::class,
+            \Grafite\Crypto\CryptoProvider::class,
         ];
     }
 
     protected function getPackageAliases($app)
     {
         return [
-            'Crypto'     => \Yab\Crypto\Services\Crypto::class,
+            'Crypto' => \Grafite\Crypto\Services\Crypto::class,
         ];
     }
 
@@ -35,8 +35,7 @@ class AppTest extends Orchestra\Testbench\TestCase
         parent::setUp();
         $this->withFactories(__DIR__.'/../src/Models/Factories');
         $this->artisan('migrate', [
-            '--database' => 'testbench',
-            '--realpath' => realpath(__DIR__.'/../src/Migrations'),
+            '--database' => 'testbench'
         ]);
         $this->withoutMiddleware();
         $this->withoutEvents();

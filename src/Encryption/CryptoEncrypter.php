@@ -2,6 +2,8 @@
 
 namespace Grafite\Crypto\Encryption;
 
+use Ramsey\Uuid\Uuid;
+
 class CryptoEncrypter implements CryptoEncrypterInterface
 {
     /**
@@ -77,17 +79,9 @@ class CryptoEncrypter implements CryptoEncrypterInterface
      */
     public function uuid()
     {
-        $uid = uniqid(null, true);
+        $uuid4 = Uuid::uuid4();
 
-        $rawid = strtoupper(sha1(uniqid(rand(), true)));
-
-        $uuid = substr($uid, 6, 8);
-        $uuid .= '-'.substr($uid, 0, 4);
-        $uuid .= '-'.substr(sha1(substr($uid, 3, 3)), 0, 4);
-        $uuid .= '-'.substr(sha1(substr(time(), 3, 4)), 0, 4);
-        $uuid .= '-'.strtolower(substr($rawid, 10, 12));
-
-        return $uuid;
+        return $uuid4->toString();
     }
 
     /**
